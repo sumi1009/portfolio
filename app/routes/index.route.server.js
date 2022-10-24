@@ -4,6 +4,7 @@ import { displayAboutPage,
     displayContactPage, 
     displayHomePage, 
     displayProjectsPage,  
+    displayResume,  
     displayServicesPage, 
     submitInfo} from "../controllers/index.controller.server.js";
 
@@ -18,5 +19,6 @@ router.get('/contact', displayContactPage);
 
 router.post('/submit', submitInfo);
 
+router.get('/resume', displayResume);
 
 export default router;
